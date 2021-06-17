@@ -22,19 +22,23 @@ times.addEventListener('click',function(){
     mobileNav.classList.remove('open');
 }); 
 });
-
-// (function(){
-//     var myDiv = document.getElementById("singh");
-//       show = function(){
-//         myDiv.style.display = "block";
-//         setTimeout(hide, 3000);
-//       },
-//       hide = function(){
-//         myDiv.style.display = "none";
-//       };
-//     show();
-//   })();
-// setTimeout(function() {
-//     $('#singh').fadeOut('slow');
-// }, 1000);
 $('#A-animation-logo').delay(3000).slideUp(); 
+
+// blur effect
+document.addEventListener("DOMContentLoaded", () => {
+            
+    const header = document.querySelector("#header");
+    const mainbody = document.querySelector("#main_body");
+
+    document.querySelector(".hamberger").addEventListener("click", () => {
+        header.classList.add("abc");
+        mainbody.classList.add("abc");
+        document.getElementById("main_body").style.position="fixed";
+    });
+
+    document.querySelector(".times").addEventListener("click", () => {
+        header.classList.remove("abc");
+        document.getElementById("main_body").style.position="";
+        mainbody.classList.remove("abc");
+    });
+});
