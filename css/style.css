@@ -17,6 +17,10 @@
     /* -webkit-font-smoothing:antialised; */
 }
 
+span {
+    color: var(--primary);
+}
+
 #A-animation-logo {
     width: 100%;
     height: 100vh;
@@ -143,6 +147,7 @@ body {
 }
 
 .left .logo {
+    cursor: pointer;
     /* border: 2px solid red; */
     /* width: 100%; */
     /* height: 100vh; */
@@ -190,17 +195,12 @@ body {
 
 .home .right h6 {
     color: var(--light-grey);
-    font-size: clamp(40px, 8vw, 75px);
+    font-size: clamp(40px, 8vw, 70px);
 }
 
 .home .right .desination h6 {
     color: var(--dark-grey)
 }
-
-.home .right h6 span {
-    color: var(--primary);
-}
-
 .home .right p {
     line-height: 1.9;
     color: var(--dark-grey);
@@ -225,16 +225,25 @@ section.about h1 {
     font-weight: 400;
 }
 
-section.about h1 span {
-    color: var(--primary);
-}
 
 section.about h3 {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
+    color:var(--dark)
 }
 
+section.about .topics{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-gap: rem; */
+}
+section.about .topics p {
+    color: var(--dark);
+    /* font-family: 'Lato', sans-serif; */
+    line-height: 0;
+}
 section.about p {
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
@@ -274,11 +283,6 @@ section.about .social a:hover {
     margin-bottom: 1rem;
     line-height: 0.5;
 }
-
-.section-heading span {
-    color: var(--primary);
-}
-
 .section-heading+p {
     color: var(--ternary);
     font-family: 'Lato', sans-serif;
@@ -631,6 +635,7 @@ footer {
 
 footer .footer-logo {
     width: 160px;
+    cursor: pointer;
 }
 
 footer .footer-socials {
