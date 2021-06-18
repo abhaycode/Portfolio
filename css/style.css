@@ -20,6 +20,9 @@
 span {
     color: var(--primary);
 }
+.one_rem{
+     margin-left: 10px;
+}
 
 #A-animation-logo {
     width: 100%;
@@ -215,10 +218,19 @@ section {
     padding: 6rem 0;
 }
 
-section.about .about-me-image {
-    height: 450px;
+.about-right {
+    margin-left: 2rem;
 }
-
+section.about .about-me-image {
+    height: 100%;
+    width: 100%;
+    content: url('../images/abhay-2.jpg');
+}
+section.about .about-me-image:hover{
+    height: 100%;
+    width: 100%;
+    content: url('../images/abhay.jpeg');
+}
 section.about h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -249,6 +261,7 @@ section.about p {
     color: var(--ternary);
     line-height: 1.9;
     margin-bottom: 2rem;
+    margin-right:2rem;
 }
 
 section.about .social {
@@ -771,12 +784,20 @@ footer .footer-socials p {
     header {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 88%, 0 100%);
     }
-    .about-right {
+    /* .about-right {
         text-align: left;
         margin-left: 1rem;
+    } */
+    section.about h1 {
+        /* border: 2px solid red; */
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
     }
     section.about .about-me-image {
-        height: 370px;
+    
     }
     section.services .card-wrapper {
         grid-template-columns: repeat(2, 1fr);
